@@ -16,12 +16,16 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Install dependencies into project folder
+    - name: Create virtualenv and install dependencies
       run: |
-        pip install aiohttp --target=".python_packages/lib/site-packages"
+        cd backend
+        python -m venv antenv
+        source antenv/bin/activate
+        pip install aiohttp
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v3
       with:
         app-name: 'people-counter-api'
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        package: backend
