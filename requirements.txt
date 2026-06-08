@@ -1,0 +1,13 @@
+# Instale com: bash install.sh
+# OU manualmente nesta ordem:
+
+numpy>=1.26.0
+Pillow>=10.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.2.0
+opencv-python>=4.9.0
+opencv-python-headless>=4.9.0
+websockets>=12.0
+aiohttp>=3.9.0
+certifi>=2024.0.0

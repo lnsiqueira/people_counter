@@ -1,0 +1,5 @@
+# Instale com: bash install.sh
+# OU manualmente nesta ordem:
+
+aiohttp>=3.9.0
+
