@@ -26,4 +26,3 @@ jobs:
       with:
         app-name: 'people-counter-api'
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        startup-command: 'python server_azure.py'
